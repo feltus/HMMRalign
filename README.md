@@ -2,7 +2,8 @@
 
 ##  Lab Overview
 Hidden Markov Models (HMMs) are built from Multiple Sequence Alignments (MSAs) and can be used to score new sequences against the information in the MSA.  HMMs are a lot like PSSMs expect they model gaps in a sequence alignment.  Here is a map of how to build an HMM from an MSA:
- 
+![<img src="hmm.png">]
+
 There is a suite of software that helps build HMMs and search databases with HMMs.  It’s called HMER.  Here is the HMMER User’s Guide: http://eddylab.org/software/hmmer/Userguide.pdf
 
 ##  Lab Objectives:
@@ -38,6 +39,8 @@ BLASTP the sequence against the ncbi nr protein database with and E-value less t
 
 #### Step 4. Build a Multiple Sequence Alignment (MSA) of the align homologs.
 Once the BLASTP is done, click on the Multiple Sequence Alignment COBALT tool on the hit page.  Save the MSA by clicking Download and then Clustal format for all the BLAST hits in Clustal MSA format.  Call it something like ‘JR89GZU0212-alignment.aln’. You can look at the file using the ‘cat JR89GZU0212-alignment.aln’ command line in a terminal.
+
+![<img src="blastout.png">] 
 
 #### Step 5. Build an HMM 
 Using this command line in a terminal on Palmetto2: 
